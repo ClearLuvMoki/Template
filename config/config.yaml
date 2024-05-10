@@ -1,0 +1,12 @@
+# 数据库配置
+db:
+  mysql:
+    host: '132.232.112.149'
+    username: 'root'
+    password: 'Xmz019210..'
+    database: 'moki'
+    port: 3306
+    charset: 'utf8mb4'
+    timezone: '+08:00'
+    synchronize: true
+
