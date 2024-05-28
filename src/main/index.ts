@@ -6,7 +6,7 @@ let mainWindow: BrowserWindow | null = null;
 
 const loadUrl: string = isDev
   ? `http://localhost:${process.env.PORT}`
-  : `file://${path.resolve(__dirname, '../renderer/', 'index.html')}`;
+  : `file://${path.resolve(__dirname, '../render/index.html')}`;
 
 
 const handleCreateMainWindow = () => {
