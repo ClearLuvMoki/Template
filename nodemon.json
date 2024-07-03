@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "./src/*",
+    "./builder/*"
+  ],
+  "ignore": [
+    "package.json",
+    "node_modules/**/node_modules",
+    ".git"
+  ]
+}
