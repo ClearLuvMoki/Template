@@ -24,12 +24,6 @@
       ],
       "@constants/*": [
         "./src/constants/*"
-      ],
-      "@main/*": [
-        "./src/main/*"
-      ],
-      "@render/*": [
-        "./src/render/*"
       ]
     }
   },

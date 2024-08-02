@@ -5,11 +5,7 @@
   "scripts": {
     "dev": "npm run dev:render",
     "dev:render": "cross-env PORT=8088 rsbuild dev --config ./builder/render/rsbuild.dev.ts",
-        "dev:main": "cross-env PORT=8088  nodemon",
-    "rebuild:main": "npm run build:main && electron ./release/dist/main/index.js",
-    "build:main": "rsbuild build --config ./builder/main/rsbuild.build.ts",
-    "build:render": "rsbuild build --config ./builder/render/rsbuild.build.ts",
-    "build": "npm run build:main &&  npm run build:render && electron-builder build --publish never ",
+    "build": "rsbuild build --config ./builder/render/rsbuild.build.ts",
     "preview": "rsbuild preview"
   },
   "dependencies": {
@@ -23,25 +19,6 @@
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "cross-env": "^7.0.3",
-    "electron": "^30.0.8",
-    "electron-builder": "^24.13.3",
-    "nodemon": "^3.1.1",
     "typescript": "^5.4.2"
-  },
-  "build": {
-    "productName": "react-rsbuild-electron",
-    "appId": "react.rsbuild.electron.demo",
-    "asar": true,
-    "asarUnpack": "**\\*.{node,dll}",
-    "files": [
-      "./release/dist",
-      "node_modules",
-      "package.json"
-    ],
-    "win": {
-      "target": [
-        "nsis"
-      ]
-    }
   }
 }
